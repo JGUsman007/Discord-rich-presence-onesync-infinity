@@ -4,7 +4,7 @@ ESX.RegisterServerCallback('server:GetCurrentPlayers', function(_, cb)
     local TotalPlayers = 0
     local players = ESX.GetPlayers
     for _ in pairs(players) do
-        TotalPlayers += 1
+        TotalPlayers = TotalPlayers + 1
     end
     cb(TotalPlayers)
 end)
